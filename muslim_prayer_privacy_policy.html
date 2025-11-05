@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Muslim Prayer App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #0d4d4d 0%, #1a6b5e 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: rgba(255,255,255,0.2);
+            border: 3px solid white;
+            border-radius: 15px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            margin-bottom: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: -30px auto 0;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+
+        .language-switch {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .language-switch button {
+            background: linear-gradient(135deg, #0d4d4d 0%, #1a6b5e 100%);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            margin: 0 10px;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            font-weight: 600;
+        }
+
+        .language-switch button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(13, 77, 77, 0.3);
+        }
+
+        .language-switch button.active {
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            color: #0d4d4d;
+        }
+
+        .content {
+            display: none;
+        }
+
+        .content.active {
+            display: block;
+            animation: fadeIn 0.5s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            color: #0d4d4d;
+            font-size: 1.8em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #1a6b5e;
+        }
+
+        h3 {
+            color: #1a6b5e;
+            font-size: 1.4em;
+            margin-top: 25px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .info-box {
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            border-left: 5px solid #4caf50;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .warning-box {
+            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+            border-left: 5px solid #ff9800;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            border-left: 5px solid #2196f3;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .contact-box strong {
+            color: #0d4d4d;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #666;
+            margin-top: 30px;
+        }
+
+        .footer a {
+            color: #1a6b5e;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .last-updated {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: 600;
+            color: #666;
+        }
+
+        .icon {
+            margin-right: 8px;
+        }
+
+        strong {
+            color: #0d4d4d;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .card {
+                padding: 25px;
+            }
+
+            .language-switch button {
+                padding: 10px 20px;
+                font-size: 14px;
+                margin: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">🕌</div>
+        <h1>Muslim Prayer</h1>
+        <p>Privacy Policy</p>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="language-switch">
+                <button class="active" onclick="switchLanguage('english')">🇬🇧 English</button>
+                <button onclick="switchLanguage('bangla')">🇧🇩 বাংলা</button>
+            </div>
+
+            <!-- English Content -->
+            <div id="english" class="content active">
+                <div class="last-updated">
+                    <span class="icon">📅</span> Last Updated: November 5, 2025
+                </div>
+
+                <h2><span class="icon">📋</span> Introduction</h2>
+                <p>This Privacy Policy describes how <strong>Muslim Prayer</strong> ("we," "our," or "the app") collects, uses, and protects your information when you use our mobile application.</p>
+                <p>Muslim Prayer is designed to help Muslims perform their religious obligations by providing accurate prayer times, Quran, Qibla direction, and Islamic calendar features. We are committed to protecting your privacy and ensuring a safe user experience.</p>
+
+                <div class="info-box">
+                    <strong><span class="icon">🔒</span> Privacy First</strong>
+                    <p>Muslim Prayer is a 100% offline app. All your data stays on your device. We do NOT collect, store, or share any personal information with third parties.</p>
+                </div>
+
+                <h2><span class="icon">📊</span> Information We Collect</h2>
+
+                <h3>1. Location Data</h3>
+                <ul>
+                    <li><strong>Purpose:</strong> To calculate accurate prayer times based on your geographical location</li>
+                    <li><strong>Type:</strong> GPS coordinates or manually selected city/district</li>
+                    <li><strong>Storage:</strong> Location data is stored locally on your device only</li>
+                    <li><strong>Sharing:</strong> We do NOT share your location data with any third parties</li>
+                </ul>
+
+                <h3>2. Device Information</h3>
+                <ul>
+                    <li><strong>Type:</strong> Device model, Android version, app version</li>
+                    <li><strong>Purpose:</strong> To ensure app compatibility and improve performance</li>
+                    <li><strong>Storage:</strong> Stored locally on your device</li>
+                </ul>
+
+                <h3>3. User Preferences</h3>
+                <ul>
+                    <li><strong>Type:</strong> Selected city/district, notification settings, prayer calculation methods</li>
+                    <li><strong>Purpose:</strong> To provide personalized prayer time notifications</li>
+                    <li><strong>Storage:</strong> Stored locally on your device</li>
+                </ul>
+
+                <h2><span class="icon">🎯</span> How We Use Your Information</h2>
+                <p>We use the collected information for the following purposes:</p>
+                <ol>
+                    <li><strong>Calculate Prayer Times:</strong> Using your location to provide accurate prayer times for your area</li>
+                    <li><strong>Send Notifications:</strong> To remind you of prayer times with Azan notifications</li>
+                    <li><strong>Qibla Direction:</strong> To show accurate Qibla (Kaaba) direction from your location</li>
+                    <li><strong>Improve App Performance:</strong> To fix bugs and enhance user experience</li>
+                </ol>
+
+                <h2><span class="icon">💾</span> Data Storage and Security</h2>
+                <ul>
+                    <li><strong>Local Storage:</strong> All your data is stored locally on your device</li>
+                    <li><strong>No Cloud Storage:</strong> We do NOT store your data on any external servers</li>
+                    <li><strong>Offline Functionality:</strong> The app works completely offline, with 100 years of prayer time data pre-loaded</li>
+                    <li><strong>No Data Collection:</strong> We do NOT collect, transmit, or sell your personal data to third parties</li>
+                </ul>
+
+                <div class="warning-box">
+                    <strong><span class="icon">⚠️</span> No Third-Party Services</strong>
+                    <p>Muslim Prayer does NOT use any third-party services that collect user data:</p>
+                    <ul style="margin-top: 10px;">
+                        <li>❌ No advertising networks</li>
+                        <li>❌ No analytics services (like Google Analytics)</li>
+                        <li>❌ No social media integrations</li>
+                        <li>❌ No cloud services</li>
+                    </ul>
+                </div>
+
+                <h2><span class="icon">🔑</span> Permissions Required</h2>
+                <p>The app requires the following Android permissions:</p>
+
+                <h3>1. Location Permission (ACCESS_FINE_LOCATION, ACCESS_COARSE_LOCATION)</h3>
+                <ul>
+                    <li><strong>Purpose:</strong> To determine your location for accurate prayer times and Qibla direction</li>
+                    <li><strong>Optional:</strong> You can deny this permission and manually select your city</li>
+                </ul>
+
+                <h3>2. Notification Permission (POST_NOTIFICATIONS)</h3>
+                <ul>
+                    <li><strong>Purpose:</strong> To send prayer time reminders and Azan notifications</li>
+                    <li><strong>Optional:</strong> You can disable notifications in app settings</li>
+                </ul>
+
+                <h3>3. Vibration Permission (VIBRATE)</h3>
+                <ul>
+                    <li><strong>Purpose:</strong> To vibrate during Azan notifications</li>
+                    <li><strong>Optional:</strong> Can be disabled in settings</li>
+                </ul>
+
+                <h2><span class="icon">👶</span> Children's Privacy</h2>
+                <p>Muslim Prayer is suitable for users of all ages, including children. We do not knowingly collect personal information from children under 13. Since the app stores all data locally and does not transmit any data, children's privacy is fully protected.</p>
+
+                <h2><span class="icon">⏱️</span> Data Retention</h2>
+                <p>Since all data is stored locally on your device:</p>
+                <ul>
+                    <li>Data remains on your device until you uninstall the app</li>
+                    <li>You can clear app data anytime through Android settings</li>
+                    <li>Uninstalling the app will permanently delete all local data</li>
+                </ul>
+
+                <h2><span class="icon">✅</span> Your Rights</h2>
+                <p>You have the following rights regarding your data:</p>
+                <ol>
+                    <li><strong>Access:</strong> View all data stored in the app settings</li>
+                    <li><strong>Modify:</strong> Change location, notification preferences anytime</li>
+                    <li><strong>Delete:</strong> Uninstall the app to remove all data</li>
+                    <li><strong>Opt-out:</strong> Disable location and notification permissions in Android settings</li>
+                </ol>
+
+                <h2><span class="icon">🔄</span> Changes to This Privacy Policy</h2>
+                <p>We may update this Privacy Policy from time to time. Any changes will be reflected in the app and on this page. The "Last Updated" date at the top will be revised. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+                <h2><span class="icon">✉️</span> Contact Us</h2>
+                <div class="contact-box">
+                    <p>If you have any questions or concerns about this Privacy Policy, please contact us:</p>
+                    <strong>Developer:</strong> Md Jahidul Islam Jahid<br>
+                    <strong>Email:</strong> <a href="mailto:jislamappdeveloper@gmail.com">jislamappdeveloper@gmail.com</a><br>
+                    <strong>Location:</strong> Lalmonirhat, Bangladesh
+                </div>
+
+                <h2><span class="icon">📝</span> Consent</h2>
+                <p>By downloading, installing, and using Muslim Prayer app, you consent to this Privacy Policy and agree to its terms.</p>
+            </div>
+
+            <!-- Bangla Content -->
+            <div id="bangla" class="content">
+                <div class="last-updated">
+                    <span class="icon">📅</span> সর্বশেষ আপডেট: ৫ নভেম্বর, ২০২৫
+                </div>
+
+                <h2><span class="icon">📋</span> ভূমিকা</h2>
+                <p>এই গোপনীয়তা নীতি বর্ণনা করে যে <strong>Muslim Prayer</strong> ("আমরা," "আমাদের," বা "অ্যাপ") কীভাবে আপনার তথ্য সংগ্রহ, ব্যবহার এবং সুরক্ষিত রাখে যখন আপনি আমাদের মোবাইল অ্যাপ্লিকেশন ব্যবহার করেন।</p>
+                <p>Muslim Prayer মুসলমানদের ধর্মীয় দায়িত্ব পালনে সহায়তার জন্য ডিজাইন করা হয়েছে - সঠিক নামাজের সময়, কুরআন, কিবলার দিক এবং ইসলামিক ক্যালেন্ডার ফিচার প্রদান করে। আমরা আপনার গোপনীয়তা রক্ষা এবং নিরাপদ ব্যবহারকারী অভিজ্ঞতা নিশ্চিত করতে প্রতিশ্রুতিবদ্ধ।</p>
+
+                <div class="info-box">
+                    <strong><span class="icon">🔒</span> গোপনীয়তা প্রথম</strong>
+                    <p>Muslim Prayer একটি ১০০% অফলাইন অ্যাপ। আপনার সমস্ত ডেটা আপনার ডিভাইসে থাকে। আমরা কোনো ব্যক্তিগত তথ্য সংগ্রহ, সংরক্ষণ বা তৃতীয় পক্ষের সাথে শেয়ার করি না।</p>
+                </div>
+
+                <h2><span class="icon">📊</span> আমরা কী তথ্য সংগ্রহ করি</h2>
+
+                <h3>১. অবস্থান তথ্য</h3>
+                <ul>
+                    <li><strong>উদ্দেশ্য:</strong> আপনার ভৌগোলিক অবস্থানের উপর ভিত্তি করে সঠিক নামাজের সময় নির্ধারণ করা</li>
+                    <li><strong>ধরন:</strong> GPS স্থানাঙ্ক অথবা ম্যানুয়ালি নির্বাচিত শহর/জেলা</li>
+                    <li><strong>সংরক্ষণ:</strong> অবস্থান ডেটা শুধুমাত্র আপনার ডিভাইসে স্থানীয়ভাবে সংরক্ষিত</li>
+                    <li><strong>শেয়ারিং:</strong> আমরা আপনার অবস্থান ডেটা কোনো তৃতীয় পক্ষের সাথে শেয়ার করি না</li>
+                </ul>
+
+                <h3>২. ডিভাইস তথ্য</h3>
+                <ul>
+                    <li><strong>ধরন:</strong> ডিভাইস মডেল, Android সংস্করণ, অ্যাপ সংস্করণ</li>
+                    <li><strong>উদ্দেশ্য:</strong> অ্যাপ সামঞ্জস্যতা এবং কর্মক্ষমতা উন্নত করা</li>
+                    <li><strong>সংরক্ষণ:</strong> আপনার ডিভাইসে স্থানীয়ভাবে সংরক্ষিত</li>
+                </ul>
+
+                <h3>৩. ব্যবহারকারী পছন্দ</h3>
+                <ul>
+                    <li><strong>ধরন:</strong> নির্বাচিত শহর/জেলা, বিজ্ঞপ্তি সেটিংস, নামাজ গণনা পদ্ধতি</li>
+                    <li><strong>উদ্দেশ্য:</strong> ব্যক্তিগত নামাজের সময় বিজ্ঞপ্তি প্রদান করা</li>
+                    <li><strong>সংরক্ষণ:</strong> আপনার ডিভাইসে স্থানীয়ভাবে সংরক্ষিত</li>
+                </ul>
+
+                <h2><span class="icon">🎯</span> আমরা কীভাবে আপনার তথ্য ব্যবহার করি</h2>
+                <p>আমরা সংগৃহীত তথ্য নিম্নলিখিত উদ্দেশ্যে ব্যবহার করি:</p>
+                <ol>
+                    <li><strong>নামাজের সময় গণনা:</strong> আপনার এলাকার জন্য সঠিক নামাজের সময় প্রদান করতে আপনার অবস্থান ব্যবহার করা</li>
+                    <li><strong>বিজ্ঞপ্তি পাঠানো:</strong> আযান বিজ্ঞপ্তির মাধ্যমে নামাজের সময় মনে করিয়ে দেওয়া</li>
+                    <li><strong>কিবলার দিক:</strong> আপনার অবস্থান থেকে সঠিক কিবলা (কাবা) দিক দেখানো</li>
+                    <li><strong>অ্যাপের কর্মক্ষমতা উন্নত:</strong> বাগ ঠিক করা এবং ব্যবহারকারী অভিজ্ঞতা উন্নত করা</li>
+                </ol>
+
+                <h2><span class="icon">💾</span> ডেটা সংরক্ষণ এবং নিরাপত্তা</h2>
+                <ul>
+                    <li><strong>স্থানীয় সংরক্ষণ:</strong> আপনার সমস্ত ডেটা আপনার ডিভাইসে স্থানীয়ভাবে সংরক্ষিত</li>
+                    <li><strong>কোনো ক্লাউড সংরক্ষণ নেই:</strong> আমরা আপনার ডেটা কোনো বাহ্যিক সার্ভারে সংরক্ষণ করি না</li>
+                    <li><strong>অফলাইন কার্যকারিতা:</strong> অ্যাপটি সম্পূর্ণ অফলাইনে কাজ করে, ১০০ বছরের নামাজের সময় ডেটা প্রি-লোডেড</li>
+                    <li><strong>কোনো ডেটা সংগ্রহ নেই:</strong> আমরা আপনার ব্যক্তিগত ডেটা সংগ্রহ, প্রেরণ বা বিক্রয় করি না</li>
+                </ul>
+
+                <div class="warning-box">
+                    <strong><span class="icon">⚠️</span> কোনো তৃতীয় পক্ষের সেবা নেই</strong>
+                    <p>Muslim Prayer ব্যবহারকারী ডেটা সংগ্রহ করে এমন কোনো তৃতীয় পক্ষের সেবা ব্যবহার করে না:</p>
+                    <ul style="margin-top: 10px;">
+                        <li>❌ কোনো বিজ্ঞাপন নেটওয়ার্ক নেই</li>
+                        <li>❌ কোনো বিশ্লেষণ সেবা নেই (যেমন Google Analytics)</li>
+                        <li>❌ কোনো সোশ্যাল মিডিয়া ইন্টিগ্রেশন নেই</li>
+                        <li>❌ কোনো ক্লাউড সেবা নেই</li>
+                    </ul>
+                </div>
+
+                <h2><span class="icon">🔑</span> প্রয়োজনীয় অনুমতি</h2>
+                <p>অ্যাপটি নিম্নলিখিত Android অনুমতি প্রয়োজন:</p>
+
+                <h3>১. অবস্থান অনুমতি (ACCESS_FINE_LOCATION, ACCESS_COARSE_LOCATION)</h3>
+                <ul>
+                    <li><strong>উদ্দেশ্য:</strong> সঠিক নামাজের সময় এবং কিবলার দিকের জন্য আপনার অবস্থান নির্ধারণ করা</li>
+                    <li><strong>ঐচ্ছিক:</strong> আপনি এই অনুমতি অস্বীকার করে ম্যানুয়ালি আপনার শহর নির্বাচন করতে পারেন</li>
+                </ul>
+
+                <h3>২. বিজ্ঞপ্তি অনুমতি (POST_NOTIFICATIONS)</h3>
+                <ul>
+                    <li><strong>উদ্দেশ্য:</strong> নামাজের সময় রিমাইন্ডার এবং আযান বিজ্ঞপ্তি পাঠাতে</li>
+                    <li><strong>ঐচ্ছিক:</strong> আপনি অ্যাপ সেটিংসে বিজ্ঞপ্তি বন্ধ করতে পারেন</li>
+                </ul>
+
+                <h3>৩. ভাইব্রেশন অনুমতি (VIBRATE)</h3>
+                <ul>
+                    <li><strong>উদ্দেশ্য:</strong> আযান বিজ্ঞপ্তির সময় ভাইব্রেট করা</li>
+                    <li><strong>ঐচ্ছিক:</strong> সেটিংসে বন্ধ করা যায়</li>
+                </ul>
+
+                <h2><span class="icon">👶</span> শিশুদের গোপনীয়তা</h2>
+                <p>Muslim Prayer শিশু সহ সকল বয়সের ব্যবহারকারীদের জন্য উপযুক্ত। আমরা জেনেশুনে ১৩ বছরের কম বয়সী শিশুদের কাছ থেকে ব্যক্তিগত তথ্য সংগ্রহ করি না। যেহেতু অ্যাপটি সমস্ত ডেটা স্থানীয়ভাবে সংরক্ষণ করে এবং কোনো ডেটা প্রেরণ করে না, তাই শিশুদের গোপনীয়তা সম্পূর্ণ সুরক্ষিত।</p>
+
+                <h2><span class="icon">⏱️</span> ডেটা ধারণ</h2>
+                <p>যেহেতু সমস্ত ডেটা আপনার ডিভাইসে স্থানীয়ভাবে সংরক্ষিত:</p>
+                <ul>
+                    <li>আপনি অ্যাপ আনইনস্টল না করা পর্যন্ত ডেটা আপনার ডিভাইসে থাকে</li>
+                    <li>আপনি যেকোনো সময় Android সেটিংসের মাধ্যমে অ্যাপ ডেটা মুছে ফেলতে পারেন</li>
+                    <li>অ্যাপ আনইনস্টল করলে সমস্ত স্থানীয় ডেটা স্থায়ীভাবে মুছে যাবে</li>
+                </ul>
+
+                <h2><span class="icon">✅</span> আপনার অধিকার</h2>
+                <p>আপনার ডেটা সম্পর্কে আপনার নিম্নলিখিত অধিকার রয়েছে:</p>
+                <ol>
+                    <li><strong>অ্যাক্সেস:</strong> অ্যাপ সেটিংসে সংরক্ষিত সমস্ত ডেটা দেখুন</li>
+                    <li><strong>পরিবর্তন:</strong> যেকোনো সময় অবস্থান, বিজ্ঞপ্তি পছন্দ পরিবর্তন করুন</li>
+                    <li><strong>মুছে ফেলুন:</strong> সমস্ত ডেটা সরাতে অ্যাপ আনইনস্টল করুন</li>
+                    <li><strong>অপ্ট-আউট:</strong> Android সেটিংসে অবস্থান এবং বিজ্ঞপ্তি অনুমতি বন্ধ করুন</li>
+                </ol>
+
+                <h2><span class="icon">🔄</span> নীতি পরিবর্তন</h2>
+                <p>আমরা সময়ে সময়ে এই গোপনীয়তা নীতি আপডেট করতে পারি। যেকোনো পরি
